@@ -8,20 +8,20 @@
 
 int main(void)
 {
+	int i;
 	int x;
-	int n;
 
-	for (i = 48; x <= 56; x++)
+	for (i = 48; i <= 56; i++)
 	{
-		for (n = 49; n <= 57; n++)
+		for (x = 49; x <= 57; x++)
 		{
-			if (n > x)
+			if (x > i)
 			{
+				putchar(i);
 				putchar(x);
-				putchar(n);
-				if (x != 56 || n != 57)
+				if (i != 56 || x != 57)
 				{
-					putchar(' ');
+					putchar(',');
 					putchar(' ');
 				}
 			}
