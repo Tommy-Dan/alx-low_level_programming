@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
 
 /**
  * main - Entry point
@@ -14,6 +12,11 @@ int main(void)
 
 	while (x <= 122)
 	{
+		if (x == 101 || x == 113)
+		{
+			x++;
+			continue;
+		}
 		putchar(x);
 		x++;
 	}
