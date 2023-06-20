@@ -1,0 +1,3 @@
+*.log
+-putchar.c
+main.c
