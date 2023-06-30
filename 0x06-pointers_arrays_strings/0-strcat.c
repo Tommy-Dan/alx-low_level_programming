@@ -5,7 +5,7 @@
  * _strcat - concatenates two strings
  * @dest: input char value
  * @src: input char value
- * Return: void
+ * Return: Return void
  */
 
 char *_strcat(char *dest, char *src)
@@ -19,6 +19,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[j] != '\0')
 	{
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
