@@ -1,7 +1,7 @@
 ###   FILES THAT SHOULD NOT ADDED TO GIT  ###
 *.log
 -putchar.c
-
+main.h
 2-main.c
 3-main.c
 4-main.c
