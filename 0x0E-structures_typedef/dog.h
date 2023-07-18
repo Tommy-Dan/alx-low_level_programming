@@ -6,6 +6,7 @@
  * @name: Name of the dog
  * @age: Age of the dog
  * @owner: Who is the owner of the dog
+ * Description: type struct dog
  *
  * Return: Return struct
  */
@@ -19,7 +20,7 @@ struct dog
 
 /**
  * dog_t - typedef for struct dog
- * declear the function
+ *
  */
 
 typedef struct dog dog_t;
