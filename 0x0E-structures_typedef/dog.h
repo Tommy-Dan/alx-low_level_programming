@@ -3,11 +3,11 @@
 
 /**
  * struct dog - a dog's basic info
- * @name: Name of the dog
- * @age: Age of the dog
- * @owner: The owner of the dog
- * Description: No description for this struct
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
  *
+ * Description: Longer description
  */
 
 struct dog
@@ -30,4 +30,4 @@ void free_dog(dog_t *d);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 
-#endif /* DOG_H */
+#endif
