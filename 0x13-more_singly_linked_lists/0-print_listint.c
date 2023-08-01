@@ -3,8 +3,8 @@
 
 /**
  * print_listint - print all the elements of a linked list
- * @h: linked list to point to
- * Return: Return number of nodea
+ * @h: linked list to print
+ * Return: Return number of nodes
  *
  */
 
