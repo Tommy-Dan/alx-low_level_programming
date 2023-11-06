@@ -6,7 +6,6 @@
  * @size: the size of new sorted hash table.
  * Return: returns NULL if an error occur Otherwise pointer to sorted table.
  */
-
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *ht;
@@ -15,7 +14,6 @@ shash_table_t *shash_table_create(unsigned long int size)
 	ht = malloc(sizeof(shash_table_t));
 	if (ht == NULL)
 		return (NULL);
-
 	ht->size = size;
 	ht->array = malloc(sizeof(shash_node_t *) * size);
 	if (ht->array == NULL)
@@ -24,7 +22,6 @@ shash_table_t *shash_table_create(unsigned long int size)
 		ht->array[i] = NULL;
 	ht->shead = NULL;
 	ht->stail = NULL;
-
 	return (ht);
 }
 
@@ -60,7 +57,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->snext;
 	}
-
 	new = malloc(sizeof(shash_node_t));
 	if (new == NULL)
 	{
@@ -105,7 +101,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			tmp->snext->sprev = new;
 		tmp->snext = new;
 	}
-
 	return (1);
 }
 
@@ -113,7 +108,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * shash_table_get - Retrieve the value associated with  key in sorted h_table.
  * @ht: A pointer to the sorted hash table.
  * @key: The key to get the value of.
- * Return: Return(NULL) when not matched Otherwise value associated with key in ht.
+ * Return: Return(NULL) when not matched Otherwise value associated with key.
  */
 
 char *shash_table_get(const shash_table_t *ht, const char *key)
@@ -202,7 +197,6 @@ void shash_table_delete(shash_table_t *ht)
 		free(node);
 		node = tmp;
 	}
-
 	free(head->array);
 	free(head);
 }
